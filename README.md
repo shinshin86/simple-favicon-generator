@@ -1,5 +1,7 @@
 # simple-favicon-generator
 
+[![Build Status](https://travis-ci.org/shinshin86/simple-favicon-generator.svg?branch=main)](https://travis-ci.org/shinshin86/simple-favicon-generator)
+
 ![simple-favicon-generator logo](./logo/simple-favicon-generator-logo.png)
 
 Simple favicon generator.

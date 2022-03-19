@@ -14,6 +14,9 @@ npm install simple-favicon-generator
 yarn add simple-favicon-generator
 ```
 
+If you are using M1 mac, you may fail to install `sharp`, a library on which it depends.  
+This is not a fundamental solution, but you can use v14 of Node.js to make the installation succeed.
+
 ## Usage
 
 This is the simplest sample code.

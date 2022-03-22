@@ -25,13 +25,13 @@ const generateBrowserConfigXML = async (outputPath, tileColor) => {
   return;
 };
 
-const generateWebMaifest = async (
+const generateWebmanifest = async (
   outputPath,
   sitemName,
   themeColor,
   displayMode
 ) => {
-  const webMaifestJson = {
+  const webManifestJson = {
     name: sitemName,
     short_name: sitemName,
     icons: [
@@ -51,7 +51,7 @@ const generateWebMaifest = async (
     display: displayMode,
   };
 
-  await fs.writeFile(outputPath, JSON.stringify(webMaifestJson));
+  await fs.writeFile(outputPath, JSON.stringify(webManifestJson));
   return;
 };
 
@@ -145,7 +145,7 @@ const generateFavicons = async (
     );
 
     // generate site.webmanifest
-    await generateWebMaifest(
+    await generateWebmanifest(
       path.join(outputDir, 'site.webmanifest'),
       siteName,
       themeColor,

@@ -33,6 +33,18 @@ const generateFavicons = require('simple-favicon-generator');
 })();
 ```
 
+If you want to specify the output directory, specify the third argument.
+
+```javascript
+const generateFavicons = require('simple-favicon-generator');
+
+(async () => {
+  const targetImage = './your-site-image.png';
+  const siteName = 'Your site name';
+  await generateFavicons(targetImage, siteName, 'output-dir');
+})();
+```
+
 ## Development
 
 ```sh
@@ -42,3 +54,11 @@ npm run test
 # code format
 npm run fmt
 ```
+
+## Licence
+
+[MIT](https://github.com/shinshin86/simple-favicon-generator/blob/main/LICENSE)
+
+## Author
+
+[Yuki Shindo](https://shinshin86.com/en)
